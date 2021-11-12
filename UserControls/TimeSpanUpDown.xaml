@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="yarasoftDrawingSessions.UserControls.TimeSpanUpDown"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:yarasoftDrawingSessions.UserControls"
+             mc:Ignorable="d" Width="90" Height="18" MinWidth="90" MinHeight="18" MaxWidth="90" MaxHeight="18">
+    <Grid Background="White">
+        <TextBox x:Name="txtHour" IsReadOnly="True" HorizontalAlignment="Left" Text="00" TextWrapping="Wrap" VerticalAlignment="Top" Width="19" Height="18" GotFocus="TxtHour_GotFocus"/>
+        <TextBox x:Name="txtMinute" IsReadOnly="True" HorizontalAlignment="Left" Margin="24,0,0,0" Text="00" TextWrapping="Wrap" VerticalAlignment="Top" Width="19" Height="18" GotFocus="TxtMinute_GotFocus"/>
+        <TextBox x:Name="txtSecond" IsReadOnly="True" HorizontalAlignment="Left" Margin="48,0,0,0" Text="00" TextWrapping="Wrap" VerticalAlignment="Top" Width="19" Height="18" GotFocus="TxtSecond_GotFocus"/>
+        <Button x:Name="btnDown" Content="▼" Margin="0,9,0
+                ,0" VerticalAlignment="Top" Height="9" FontSize="4" Click="BtnDown_Click" HorizontalAlignment="Right" Width="19"/>
+        <Button x:Name="btnUp" Content="▲" Margin="0,0,0
+                ,0" VerticalAlignment="Top" Height="9" FontSize="4" Click="BtnUp_Click" HorizontalAlignment="Right" Width="19"/>
+
+    </Grid>
+</UserControl>
